@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Request - LAB ZETA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Submit Your Project Request</h1>
+  </header>
+  <form id="requestForm">
+    <input type="text" placeholder="Your Name" name="name" required />
+    <input type="email" placeholder="Email" name="email" required />
+    <input type="text" placeholder="Project Title" name="title" required />
+    <textarea placeholder="Describe your project..." name="description" required></textarea>
+    <input type="file" name="attachment" />
+    <select name="category">
+      <option value="robotics">Robotics</option>
+      <option value="website">Website</option>
+      <option value="AI">AI</option>
+      <option value="electronics">Electronics</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="submit.js"></script>
+</body>
+</html>
