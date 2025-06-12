@@ -1,10 +1,10 @@
-import React from 'react';
-import RequestForm from './components/RequestForm';
+import React from "react";
+import RequestForm from "./components/RequestForm";
+import "./global.css";
 
 function App() {
   return (
-    <div>
-      <h1>LAB ZETA – Submit a Project</h1>
+    <div className="App">
       <RequestForm />
     </div>
   );
