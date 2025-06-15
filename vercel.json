@@ -1,0 +1,10 @@
+
+{
+  "version": 2,
+  "builds": [{ "src": "submit.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/submit", "methods": ["POST"], "dest": "submit.js" },
+    { "src": "/track/(.*)", "methods": ["GET"], "dest": "submit.js" },
+    { "src": "/admin-requests", "methods": ["GET"], "dest": "submit.js" }
+  ]
+}
